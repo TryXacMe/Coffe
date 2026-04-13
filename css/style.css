@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #83888F;
+}
+
+section,
+header {
+  width: 100%;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 43px;
+}
+.navbar__logo {
+  margin-bottom: 44px;
+  padding-left: 80px;
+  width: 31/30px;
+  height: 35px;
+}
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.navbar__item {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+}
+.navbar:hover {
+  color: #333d43;
+}
+
+.intro__container {
+  position: relative;
+  z-index: 1;
+}
+.intro__title {
+  position: absolute;
+  z-index: 2;
+  top: 117px;
+  left: 85px;
+  width: 493px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: white;
+}
+.intro__text {
+  position: absolute;
+  top: 294px;
+  left: 85px;
+  z-index: 2;
+  width: 445px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.intro__btn {
+  position: absolute;
+  top: 428px;
+  left: 85px;
+  z-index: 2;
+  background: #66d2cf;
+  border-radius: 6px;
+  width: 217px;
+  height: 56px;
+  border: none;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fefcf7;
+}/*# sourceMappingURL=style.css.map */

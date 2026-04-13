@@ -1,0 +1,37 @@
+@import "../block/block";
+
+.navbar {
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 43px;
+  }
+  &__logo {
+    padding-left: 80px;
+    width: 31/30px;
+    height: 35px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__item {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.923077px;
+      text-transform: uppercase;
+      color: #83888f;
+    }
+
+    &:hover {
+      color: #333d43;
+    }
+}

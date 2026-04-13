@@ -1,0 +1,92 @@
+@import "../block/block";
+
+.navbar {
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 43px;
+  }
+  &__logo {
+    margin-bottom: 44px;
+    padding-left: 80px;
+    width: 31/30px;
+    height: 35px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__item {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+  }
+
+  &:hover {
+    color: #333d43;
+  }
+}
+
+.intro {
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+  &__title {
+    position: absolute;
+    z-index: 2;
+    top: 117px;
+    left: 85px;
+    width: 493px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: white;
+  }
+
+  &__text {
+    position: absolute;
+    top: 294px;
+    left: 85px;
+    z-index: 2;
+    width: 445px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 428px;
+    left: 85px;
+    z-index: 2;
+    background: #66d2cf;
+    border-radius: 6px;
+    width: 217px;
+    height: 56px;
+    border: none;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #fefcf7;
+  }
+}
