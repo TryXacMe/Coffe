@@ -35,3 +35,157 @@
       color: #333d43;
     }
 }
+
+.intro {
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+  &__title {
+    position: absolute;
+    z-index: 2;
+    top: 117px;
+    left: 85px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: white;
+  }
+
+  &__text {
+    position: absolute;
+    top: 214px;
+    left: 85px;
+    z-index: 2;
+    width: 445px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
+
+.works {
+  &__img {
+    position: relative;
+    top: 200px;
+    left: 85px;
+    margin-bottom: 67px;
+  }
+
+  &__boxs {
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #2C343E;
+    gap: 95px;
+    .box__number {
+      margin-bottom: 38px;
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 72px;
+      line-height: 72px;
+      color: #fdd6ba;
+    }
+
+    .boxs__box {
+      padding-top: 198px;
+    }
+
+    .box1 {
+      padding-left: 85px;
+      padding-bottom: 99px;
+    }
+
+    .box2 {
+      padding-bottom: 99px;
+    }
+
+    .box3 {
+      padding-bottom: 99px;
+    }
+
+    .box__title {
+      margin-bottom: 42px;
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 36px;
+      width: 200px;
+      color: #FEFCF7;
+    }
+
+    .box__text {
+      width: 285px;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FEFCF7;
+    }
+  }
+}
+
+.footer {
+  &__background {
+    margin-top: 168px;
+    background: #2c343e;
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+
+  &__logo {
+    padding-left: 85px;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    width: 370px;
+    height: 134px;
+    margin-right: 103px;
+  }
+
+  &__menu {
+    margin-right: 368px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+  }
+
+  &__link {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+  }
+
+  &__link:hover {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+  
+  }
+
+  &__imgs {
+    display: flex;
+    gap: 24px;
+  }
+}
