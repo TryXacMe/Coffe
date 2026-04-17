@@ -104,3 +104,154 @@
     width: 480px;
   }
 }
+
+.quality {
+  &__container {
+    height: 500px;
+  }
+
+  &__bgc {
+    position: relative;
+    z-index: 1;
+    margin-top: 256px;
+    background-color: #2c343e;
+    color: white;
+    border-radius: 7px;
+  }
+
+  &__matn {
+    padding: 88px 665px 176px 85px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #fefcf7;
+  }
+
+  &__text {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 2;
+    width: 445px;
+    height: 474px;
+    left: 730px;
+    top: -559px;
+  }
+}
+
+.continet {
+  &__title {
+    margin-top: 128px;
+    margin-bottom: 72px;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888f;
+  }
+
+  &__boxs {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 95px;
+
+    &__img {
+      margin-bottom: 46px;
+    }
+
+    .box__matn {
+      width: 285px;
+    }
+
+    .box__title {
+      margin-bottom: 24px;
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 36px;
+      color: #333d4b;
+    }
+
+    .box__text {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #333d4b;
+    }
+  }
+}
+
+.footer {
+  &__background {
+    margin-top: 168px;
+    background: #2c343e;
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+
+  &__logo {
+    padding-left: 85px;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    width: 370px;
+    height: 134px;
+    margin-right: 103px;
+  }
+
+  &__menu {
+    margin-right: 368px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+  }
+
+  &__link {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+  }
+
+  &__link:hover {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+  
+  }
+
+  &__imgs {
+    display: flex;
+    gap: 24px;
+  }
+}

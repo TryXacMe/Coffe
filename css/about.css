@@ -115,4 +115,133 @@ header {
   mix-blend-mode: normal;
   opacity: 0.8;
   width: 480px;
+}
+
+.quality__container {
+  height: 500px;
+}
+.quality__bgc {
+  position: relative;
+  z-index: 1;
+  margin-top: 256px;
+  background-color: #2c343e;
+  color: white;
+  border-radius: 7px;
+}
+.quality__matn {
+  padding: 88px 665px 176px 85px;
+}
+.quality__title {
+  margin-bottom: 32px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fefcf7;
+}
+.quality__text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.quality__img {
+  position: relative;
+  z-index: 2;
+  width: 445px;
+  height: 474px;
+  left: 730px;
+  top: -559px;
+}
+
+.continet__title {
+  margin-top: 128px;
+  margin-bottom: 72px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+.continet__boxs {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 95px;
+}
+.continet__boxs__img {
+  margin-bottom: 46px;
+}
+.continet__boxs .box__matn {
+  width: 285px;
+}
+.continet__boxs .box__title {
+  margin-bottom: 24px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+}
+.continet__boxs .box__text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+}
+
+.footer__background {
+  margin-top: 168px;
+  background: #2c343e;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.footer__logo {
+  padding-left: 85px;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  width: 370px;
+  height: 134px;
+  margin-right: 103px;
+}
+.footer__menu {
+  margin-right: 368px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+.footer__link {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+}
+.footer__link:hover {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+}
+.footer__imgs {
+  display: flex;
+  gap: 24px;
 }/*# sourceMappingURL=about.css.map */
