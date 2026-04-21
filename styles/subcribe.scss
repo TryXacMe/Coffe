@@ -8,8 +8,8 @@
     padding-top: 43px;
   }
   &__logo {
-    margin-bottom: 44px;
-    width: 300px;
+    margin-bottom: 43px;
+    padding-left: 80px;
     height: 35px;
   }
 
@@ -31,7 +31,7 @@
     color: #83888f;
   }
 
-  &__item:hover {
+  &:hover {
     color: #333d43;
   }
 }
@@ -71,22 +71,28 @@
 }
 
 .works {
+  &__container {
+    margin-top: 168px;
+    margin-bottom: 144px;
+    background: #2c343e;
+    border-radius: 10px;
+  }
+
   &__img {
-    position: relative;
-    top: 200px;
-    left: 85px;
-    margin-bottom: 67px;
+    padding-top: 100px;
+    padding-left: 85px;
   }
 
   &__boxs {
-    border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: start;
-    background-color: #2c343e;
-    gap: 95px;
-    .box__number {
-      margin-bottom: 38px;
+  }
+
+  .box {
+    &__number {
+      margin-top: 82px;
+      padding-left: 85px;
       font-family: "Fraunces 9pt";
       font-style: normal;
       font-weight: 900;
@@ -95,36 +101,24 @@
       color: #fdd6ba;
     }
 
-    .boxs__box {
-      padding-top: 198px;
-    }
-
-    .box1 {
+    &__title {
       padding-left: 85px;
-      padding-bottom: 99px;
-    }
-
-    .box2 {
-      padding-bottom: 99px;
-    }
-
-    .box3 {
-      padding-bottom: 99px;
-    }
-
-    .box__title {
-      margin-bottom: 42px;
+      width: 255px;
+      margin-top: 38px;
+      padding-left: 85px;
       font-family: "Fraunces 9pt";
       font-style: normal;
       font-weight: 900;
       font-size: 32px;
       line-height: 36px;
-      width: 200px;
       color: #fefcf7;
     }
 
-    .box__text {
-      width: 285px;
+    &__text {
+      margin-top: 42px;
+      padding-left: 85px;
+      padding-bottom: 99px;
+      width: 363px;
       font-family: "Barlow";
       font-style: normal;
       font-weight: 400;
@@ -137,31 +131,23 @@
 
 .coffee {
   &__container {
-    margin-top: 144px;
     display: flex;
-    gap: 125px;
+    align-items: start;
+    justify-content: start;
   }
 
   &__left {
     width: 255px;
-    font-family: "Fraunces 9pt";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    color: #333d4b;
   }
 
   .left {
-    margin-left: 200px;
-
     &__matn {
-      margin-top: 24px;
-      margin-bottom: 24px;
       display: flex;
       align-items: center;
       justify-content: start;
-      gap: 28px;
+      gap: 24px;
+      padding-bottom: 24px;
+      padding-top: 24px;
     }
 
     &__number {
@@ -172,101 +158,147 @@
       line-height: 32px;
       color: #83888f;
     }
-  }
 
-  &__right {
-    .right {
-      &__title {
-        margin-top: 24px;
-        margin-bottom: 54px;
-        font-family: "Fraunces 9pt";
-        font-style: normal;
-        font-weight: 900;
-        font-size: 40px;
-        line-height: 48px;
-        color: #83888f;
-      }
-
-      &__box {
-        background: #f4f1eb;
-        width: 228px;
-        border-radius: 8px;
-        padding-left: 28px;
-        padding-top: 32px;
-      }
-
-      &__box:hover {
-        background: #FDD6BA;
-        width: 228px;
-        border-radius: 8px;
-        padding-left: 28px;
-        padding-top: 32px;
-      }
-
-      &__box:active {
-        background: #0E8784;
-        color: white;
-        width: 228px;
-        border-radius: 8px;
-        padding-left: 28px;
-        padding-top: 32px;
-      }
+    &__text {
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      color: #83888f;
     }
   }
-}
 
-.right__boxs {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 23px;
+  &__boxs {
+    display: block;
+  }
+
+  .right {
+    &__boxs {
+      margin-top: 56px;
+      margin-left: 125px;
+      display: flex;
+      gap: 23px;
+    }
+
+    &__box {
+      background: #f4f1eb;
+      border-radius: 8px;
+    }
+
+    &__box:hover {
+      background: #fdd6ba;
+      border-radius: 8px;
+    }
+
+    &__box:active {
+      background: #0e8784;
+      color: white;
+      border-radius: 8px;
+    }
+
+    &__title {
+      padding-top: 24px;
+      margin-left: 125px;
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      color: #83888f;
+    }
+  }
+
   .box {
     &__title {
-      font-family: "Fraunces 9pt";
+      padding-left: 28px;
+      padding-top: 32px;
+      font-family: "Fraunces";
       font-style: normal;
       font-weight: 900;
       font-size: 24px;
       line-height: 32px;
       color: #333d4b;
     }
-    &__text {
-      padding-right: 28px;
-      padding-bottom: 84px;
-      font-family: "Barlow";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      color: #333d4b;
-    }
-  }
 
-  .box:active {
-    &__title {
-      font-family: "Fraunces 9pt";
-      font-style: normal;
-      font-weight: 900;
-      font-size: 24px;
-      line-height: 32px;
-      color: white;
-    }
     &__text {
       padding-right: 28px;
       padding-bottom: 84px;
+      margin-top: 24px;
+      padding-left: 28px;
       font-family: "Barlow";
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 26px;
-      color: white;
+      width: 232px;
+      color: #333d4b;
     }
   }
 }
 
+.order {
+  &__container {
+    margin-left: 500px;
+  }
+  &__bg {
+    margin-top: 88px;
+    width: 730px;
+    background: #2c343e;
+    border-radius: 10px;
+  }
+
+  &__title {
+    padding-top: 27px;
+    padding-left: 64px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  &__text {
+    padding-bottom: 27px;
+    padding-left: 64px;
+    padding-right: 64px;
+    width: 602px;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #ffffff;
+    width: 500px;
+  }
+
+  &__span {
+    color: #0e8784;
+  }
+
+  &__btn {
+    margin-left: 520px;
+    margin-top: 40px;
+    width: 217px;
+    height: 56px;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #fefcf7;
+    border: none;
+    background: #66d2cf;
+    border-radius: 6px;
+  }
+}
 
 .footer {
-  display: block;
-  
   &__background {
     margin-top: 168px;
     background: #2c343e;

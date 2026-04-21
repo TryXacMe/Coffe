@@ -31,8 +31,8 @@ header {
   padding-top: 43px;
 }
 .navbar__logo {
-  margin-bottom: 44px;
-  width: 300px;
+  margin-bottom: 43px;
+  padding-left: 80px;
   height: 35px;
 }
 .navbar__menu {
@@ -51,7 +51,7 @@ header {
   text-transform: uppercase;
   color: #83888f;
 }
-.navbar__item:hover {
+.navbar:hover {
   color: #333d43;
 }
 
@@ -86,22 +86,24 @@ header {
   opacity: 0.8;
 }
 
+.works__container {
+  margin-top: 168px;
+  margin-bottom: 144px;
+  background: #2c343e;
+  border-radius: 10px;
+}
 .works__img {
-  position: relative;
-  top: 200px;
-  left: 85px;
-  margin-bottom: 67px;
+  padding-top: 100px;
+  padding-left: 85px;
 }
 .works__boxs {
-  border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: start;
-  background-color: #2c343e;
-  gap: 95px;
 }
-.works__boxs .box__number {
-  margin-bottom: 38px;
+.works .box__number {
+  margin-top: 82px;
+  padding-left: 85px;
   font-family: "Fraunces 9pt";
   font-style: normal;
   font-weight: 900;
@@ -109,31 +111,23 @@ header {
   line-height: 72px;
   color: #fdd6ba;
 }
-.works__boxs .boxs__box {
-  padding-top: 198px;
-}
-.works__boxs .box1 {
+.works .box__title {
   padding-left: 85px;
-  padding-bottom: 99px;
-}
-.works__boxs .box2 {
-  padding-bottom: 99px;
-}
-.works__boxs .box3 {
-  padding-bottom: 99px;
-}
-.works__boxs .box__title {
-  margin-bottom: 42px;
+  width: 255px;
+  margin-top: 38px;
+  padding-left: 85px;
   font-family: "Fraunces 9pt";
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
   line-height: 36px;
-  width: 200px;
   color: #fefcf7;
 }
-.works__boxs .box__text {
-  width: 285px;
+.works .box__text {
+  margin-top: 42px;
+  padding-left: 85px;
+  padding-bottom: 99px;
+  width: 363px;
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
@@ -143,29 +137,20 @@ header {
 }
 
 .coffee__container {
-  margin-top: 144px;
   display: flex;
-  gap: 125px;
+  align-items: start;
+  justify-content: start;
 }
 .coffee__left {
   width: 255px;
-  font-family: "Fraunces 9pt";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 32px;
-  color: #333d4b;
-}
-.coffee .left {
-  margin-left: 200px;
 }
 .coffee .left__matn {
-  margin-top: 24px;
-  margin-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 28px;
+  gap: 24px;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 .coffee .left__number {
   font-family: "Fraunces 9pt";
@@ -175,9 +160,39 @@ header {
   line-height: 32px;
   color: #83888f;
 }
-.coffee__right .right__title {
-  margin-top: 24px;
-  margin-bottom: 54px;
+.coffee .left__text {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+.coffee__boxs {
+  display: block;
+}
+.coffee .right__boxs {
+  margin-top: 56px;
+  margin-left: 125px;
+  display: flex;
+  gap: 23px;
+}
+.coffee .right__box {
+  background: #f4f1eb;
+  border-radius: 8px;
+}
+.coffee .right__box:hover {
+  background: #fdd6ba;
+  border-radius: 8px;
+}
+.coffee .right__box:active {
+  background: #0e8784;
+  color: white;
+  border-radius: 8px;
+}
+.coffee .right__title {
+  padding-top: 24px;
+  margin-left: 125px;
   font-family: "Fraunces 9pt";
   font-style: normal;
   font-weight: 900;
@@ -185,75 +200,85 @@ header {
   line-height: 48px;
   color: #83888f;
 }
-.coffee__right .right__box {
-  background: #f4f1eb;
-  width: 228px;
-  border-radius: 8px;
+.coffee .box__title {
   padding-left: 28px;
   padding-top: 32px;
-}
-.coffee__right .right__box:hover {
-  background: #FDD6BA;
-  width: 228px;
-  border-radius: 8px;
-  padding-left: 28px;
-  padding-top: 32px;
-}
-.coffee__right .right__box:active {
-  background: #0E8784;
-  color: white;
-  width: 228px;
-  border-radius: 8px;
-  padding-left: 28px;
-  padding-top: 32px;
-}
-
-.right__boxs {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 23px;
-}
-.right__boxs .box__title {
-  font-family: "Fraunces 9pt";
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
   color: #333d4b;
 }
-.right__boxs .box__text {
+.coffee .box__text {
   padding-right: 28px;
   padding-bottom: 84px;
+  margin-top: 24px;
+  padding-left: 28px;
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+  width: 232px;
   color: #333d4b;
 }
-.right__boxs .box:active__title {
+
+.order__container {
+  margin-left: 500px;
+}
+.order__bg {
+  margin-top: 88px;
+  width: 730px;
+  background: #2c343e;
+  border-radius: 10px;
+}
+.order__title {
+  padding-top: 27px;
+  padding-left: 64px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.order__text {
+  padding-bottom: 27px;
+  padding-left: 64px;
+  padding-right: 64px;
+  width: 602px;
   font-family: "Fraunces 9pt";
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
-  line-height: 32px;
-  color: white;
+  line-height: 40px;
+  color: #ffffff;
+  width: 500px;
 }
-.right__boxs .box:active__text {
-  padding-right: 28px;
-  padding-bottom: 84px;
-  font-family: "Barlow";
+.order__span {
+  color: #0e8784;
+}
+.order__btn {
+  margin-left: 520px;
+  margin-top: 40px;
+  width: 217px;
+  height: 56px;
+  font-family: "Fraunces 9pt";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fefcf7;
+  border: none;
+  background: #66d2cf;
+  border-radius: 6px;
 }
 
-.footer {
-  display: block;
-}
 .footer__background {
   margin-top: 168px;
   background: #2c343e;

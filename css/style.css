@@ -144,7 +144,7 @@ header {
   color: #333d4b;
 }
 
-.choose__bitmap {
+.coffee__bitmap {
   position: relative;
   z-index: 1;
   margin-left: 88px;
@@ -153,7 +153,7 @@ header {
   width: 1050px;
   height: 500px;
 }
-.choose__title {
+.coffee__title {
   padding-top: 100px;
   font-family: "Fraunces 9pt";
   font-style: normal;
@@ -163,7 +163,7 @@ header {
   text-align: center;
   color: #fefcf7;
 }
-.choose__text {
+.coffee__text {
   margin-left: 250px;
   margin-top: 32px;
   font-family: "Barlow";
@@ -177,11 +177,11 @@ header {
   width: 540px;
   opacity: 0.8;
 }
-.choose__cards__card {
+.coffee__cards__card {
   display: flex;
   gap: 30px;
 }
-.choose__cards {
+.coffee__cards {
   display: flex;
   gap: 30px;
   position: relative;
@@ -192,13 +192,13 @@ header {
   border-radius: 7px;
   text-align: center;
 }
-.choose .choose__card__img {
+.coffee .choose__card__img {
   padding-top: 72px;
   padding-left: 106px;
   padding-bottom: 30px;
   padding-right: 113px;
 }
-.choose .choose__card__title {
+.coffee .choose__card__title {
   font-family: "Fraunces 9pt";
   font-style: normal;
   font-weight: 900;
@@ -208,7 +208,7 @@ header {
   text-align: center;
   color: #fefcf7;
 }
-.choose .choose__card__text {
+.coffee .choose__card__text {
   padding-bottom: 48px;
   padding-left: 47px;
   font-family: "Barlow";
