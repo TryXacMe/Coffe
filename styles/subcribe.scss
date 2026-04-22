@@ -239,8 +239,9 @@
 
 .order {
   &__container {
-    margin-left: 500px;
+    margin-left: 1000px;
   }
+  
   &__bg {
     margin-top: 88px;
     width: 730px;
@@ -349,5 +350,15 @@
   &__imgs {
     display: flex;
     gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero{
+    flex-direction: column;
+  }
+
+  .cards{
+    grid-template-columns: 1fr;
   }
 }

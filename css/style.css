@@ -403,4 +403,123 @@ header {
 .footer__imgs {
   display: flex;
   gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .navbar__nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navbar__logo {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .navbar__menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .intro__title {
+    width: 90%;
+    font-size: 40px;
+    line-height: 45px;
+    left: 20px;
+    top: 60px;
+  }
+  .intro__text {
+    width: 90%;
+    left: 20px;
+    top: 180px;
+    font-size: 14px;
+  }
+  .intro__btn {
+    left: 20px;
+    top: 320px;
+  }
+  .cards__container {
+    flex-direction: column;
+  }
+  .choose__text {
+    width: 90%;
+    margin: 20px auto;
+    padding: 0;
+  }
+  .choose__cards__card {
+    flex-direction: column;
+    top: -100px;
+  }
+  .choose .cards__card {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+  .choose .card__img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .choose .card__text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .coffee__bitmap {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  .coffee__text {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .coffee__cards {
+    flex-direction: column;
+    left: 0;
+    top: -50px;
+    width: 90%;
+    margin: auto;
+  }
+  .coffee .choose__card__text {
+    width: 90%;
+    padding-left: 0;
+    margin: auto;
+  }
+  .coffee .choose__card__img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .works__title {
+    margin-top: 150px;
+    text-align: center;
+  }
+  .works__boxs {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .works .box__title,
+  .works .box__text {
+    width: 100%;
+  }
+  .works__btn {
+    display: block;
+    margin: 40px auto;
+  }
+  .footer__background {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .footer__logo {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: auto;
+  }
+  .footer__menu {
+    margin: 20px 0;
+    flex-direction: column;
+  }
+  .footer__imgs {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
