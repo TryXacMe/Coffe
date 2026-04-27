@@ -24,28 +24,17 @@ header {
   margin: 0 auto;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media (min-width: 767px) and (max-width: 1279px) {
+  .container {
+    width: 700px;
+  }
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .navbar__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 43px;
-}
-.navbar__logo {
-  margin-bottom: 44px;
-  padding-left: 80px;
-  width: 31/30px;
-  height: 35px;
+  padding-bottom: 44px;
 }
 .navbar__menu {
   display: flex;
@@ -69,26 +58,26 @@ img {
 
 .intro__container {
   position: relative;
-  z-index: 1;
+  background-image: url(../assents/Bitmap.png);
+  height: 600px;
 }
 .intro__title {
   position: absolute;
   z-index: 2;
   top: 117px;
   left: 85px;
-  width: 493px;
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
   line-height: 72px;
   color: white;
+  width: 500px;
 }
 .intro__text {
   position: absolute;
   top: 294px;
   left: 85px;
   z-index: 2;
-  width: 445px;
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
@@ -97,6 +86,7 @@ img {
   color: #fefcf7;
   mix-blend-mode: normal;
   opacity: 0.8;
+  width: 400px;
 }
 .intro__btn {
   position: absolute;
@@ -158,8 +148,11 @@ img {
 .choose__bitmap {
   position: relative;
   z-index: 1;
-  background: #2c343e;
-  border-radius: 10px;
+  margin-left: 88px;
+  background-color: #333d4b;
+  border-radius: 7px;
+  width: 1050px;
+  height: 500px;
 }
 .choose__title {
   padding-top: 100px;
@@ -172,83 +165,6 @@ img {
   color: #fefcf7;
 }
 .choose__text {
-  margin-left: 370px;
-  margin-top: 32px;
-  padding-right: 370px;
-  padding-bottom: 317px;
-  width: 900px;
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  color: #fefcf7;
-  mix-blend-mode: normal;
-  opacity: 0.8;
-}
-.choose__cards__card {
-  position: relative;
-  top: -230px;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-.choose .cards__card {
-  width: 350px;
-  height: 382px;
-  background: #0e8784;
-  border-radius: 8px;
-}
-.choose .card__img {
-  margin-top: 72px;
-  margin-left: 135px;
-  margin-bottom: 56px;
-}
-.choose .card__title {
-  margin-bottom: 24px;
-  font-family: "Fraunces 9pt";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
-  color: #fefcf7;
-}
-.choose .card__text {
-  margin-left: 47px;
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  width: 255px;
-  color: #fefcf7;
-}
-
-.coffee__bitmap {
-  position: relative;
-  z-index: 1;
-  margin-left: 88px;
-  background-color: #333d4b;
-  border-radius: 7px;
-  width: 1050px;
-  height: 500px;
-}
-.coffee__title {
-  padding-top: 100px;
-  font-family: "Fraunces 9pt";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  color: #fefcf7;
-}
-.coffee__text {
   margin-left: 250px;
   margin-top: 32px;
   font-family: "Barlow";
@@ -262,11 +178,11 @@ img {
   width: 540px;
   opacity: 0.8;
 }
-.coffee__cards__card {
+.choose__cards__card {
   display: flex;
   gap: 30px;
 }
-.coffee__cards {
+.choose__cards {
   display: flex;
   gap: 30px;
   position: relative;
@@ -277,13 +193,13 @@ img {
   border-radius: 7px;
   text-align: center;
 }
-.coffee .choose__card__img {
+.choose .choose__card__img {
   padding-top: 72px;
   padding-left: 106px;
   padding-bottom: 30px;
   padding-right: 113px;
 }
-.coffee .choose__card__title {
+.choose .choose__card__title {
   font-family: "Fraunces 9pt";
   font-style: normal;
   font-weight: 900;
@@ -293,7 +209,7 @@ img {
   text-align: center;
   color: #fefcf7;
 }
-.coffee .choose__card__text {
+.choose .choose__card__text {
   padding-bottom: 48px;
   padding-left: 47px;
   font-family: "Barlow";
@@ -416,10 +332,55 @@ img {
   gap: 24px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  main {
+@media (min-width: 767px) and (max-width: 1279px) {
+  .navbar__logo {
+    width: 220px;
+  }
+  .intro__container {
+    background-image: url(../assents/bg-table.jpg);
+    background-repeat: no-repeat;
+    height: 689px;
+  }
+  .intro__title {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    color: #fefcf7;
+    width: 300px;
+  }
+  .intro__text {
+    position: absolute;
+    top: 220px;
+    left: 50px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fefcf7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+  .intro__btn {
+    position: absolute;
+    top: 330px;
+    left: 50px;
+    width: 217px;
+  }
+  .cards__container {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+  .cards .card {
+    display: flex;
     align-items: center;
     justify-content: center;
   }
